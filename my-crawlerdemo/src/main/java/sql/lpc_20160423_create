@@ -1,0 +1,12 @@
+CREATE TABLE `crawler_itorange` (
+  `id` bigint(20) NOT NULL COMMENT 'id索引键',
+  `investmentTime` datetime NOT NULL COMMENT '投资的时间',
+  `title` varchar(100) NOT NULL COMMENT '标题',
+  `url` varchar(100) NOT NULL COMMENT '详细信息连接',
+  `image` varchar(500) DEFAULT NULL COMMENT '图片',
+  `round` varchar(100) DEFAULT NULL COMMENT 'round轮次',
+  `money` varchar(100) DEFAULT NULL COMMENT '融资金额',
+  `investorset` varchar(100) DEFAULT NULL COMMENT '融资方',
+  KEY `id` (`id`),
+  KEY `investmentTime` (`investmentTime`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='爬虫:it橘子';
